@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "pageZone": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.image",
+        "pages.quote",
+        "pages.rich-text"
+      ]
+    }
+  }
+}
